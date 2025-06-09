@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Summary App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Summary Generator</h1>
+
+        <form method="POST">
+            <label for="ticker">Enter Stock Ticker:</label>
+            <input type="text" id="ticker" name="ticker" required>
+            <button type="submit">Get Summary</button>
+        </form>
+
+        {% if summary %}
+            <div class="result">
+                <h2>Summary:</h2>
+                <p>{{ summary|safe }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
