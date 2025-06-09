@@ -18,5 +18,5 @@ Setup Instructions -
 
 	1.	Get your Gemini API key from Google AI Studio
  	2.	Create a .env file in your project root
-  3.  Store your Api key in a variable in the .env file.
-  3.	Run the Flask app: "python app.py" 
+  	3. 	Store your Api key in a variable in the .env file.
+  	4.	Run the Flask app: "python app.py" 
